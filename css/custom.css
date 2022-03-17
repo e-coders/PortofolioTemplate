@@ -1,0 +1,210 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    color: #999;
+    transition: .182s;
+}
+nav{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px 10px;
+    background: #f8f9fa;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+nav a{
+    display: inline-block;
+    color: rgb(0,0,0,10);
+    text-decoration: none;
+    margin-left: 3x;
+    margin-right: 3px;
+    border-bottom: 1px solid transparent;
+    transition: .182s;
+}
+nav a li{
+    list-style: none;
+    display: block;
+}
+nav a:hover{
+    color:inherit;
+    border-bottom: 1px solid rgb(0,0,0,10);
+}
+div.centered_content{
+    text-align: center;
+}
+h4.hi_im{
+    width: 70%;
+    margin-top: 95px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+button.left_button{
+    border: 1px solid #212121;
+    border-radius: 100px;
+    padding: 14px;
+    background: transparent;
+    color: #212121;
+    transition: .182s;
+}
+button.left_button:hover{
+    background: #212121;
+    color: #e8e8e8;
+}
+button.left_button_2{
+    border: 1px solid #212121;
+    border-radius: 100px;
+    padding: 14px;
+    background: #212121;
+    color: #e8e8e8;
+    transition: .182s;
+}
+button.left_button_2:hover{
+    background: transparent;
+    color: #212121;
+}
+div.gap_1{
+    margin-top: 15em;
+}
+button.submit_btn{
+    width: 100px;
+}
+.skills,
+.skills .skill,
+.skills .skill .skill-title,
+.skills .skill .skill-bar {
+   width: 100%;
+   float: left;
+}
+
+.skills .skill {
+   margin-bottom: 30px;
+}
+
+.skills .skill .skill-title {
+   color: #808080;
+   margin-bottom: 10px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.skills .skill .skill-bar {
+   width: 0;
+   height: 6px;
+   background: #f0f0f0;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills.active .skill .skill-bar {
+   width: 100%;
+}
+
+.skills .skill .skill-bar span {
+   float: left;
+   width: 0%;
+   background: #1D91F2;
+   height: 6px;
+   position: relative;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills .skill .skill-bar span b {
+   float: left;
+   width: 100%;
+   position: relative;
+   text-align: right;
+   opacity: 0;
+   font-size: 14px;
+   color: #1D91F2;
+   font-weight: 400;
+   top: -13px;
+}
+div.gap_2{
+    margin-top: 4em;
+}
+::selection{
+    background-color: #212121;
+    opacity: 50%;
+    color: #e8e8e8;
+}
+::-webkit-scrollbar {
+    width:10px;
+    transition: .182s;
+    height:5px;
+    background: #555; 
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #000; 
+}
+div.skills,div.gap_1,div.gap_2,nav{
+    user-select: none;
+}
+form{
+    width: 100%;
+}
+form input{
+    width:46%;
+    margin:20px 1%;
+    background:transparent;
+    border:0px;
+    border-bottom:2px solid rgba(0, 0, 0, 0.1);
+    padding:8px 10px;
+    font-size:18px;
+    transition:0.4s ease-in-out;
+}
+form textarea{
+    width:96%;
+    margin:20px 1%;
+    padding:8px 10px;
+    border:0px;
+    border-bottom:2px solid rgba(0, 0, 0, 0.1);
+    padding:8px 10px;
+    font-size:18px;
+    background:transparent;
+    resize:none;
+    transition:0.4s ease-in-out;
+}
+form input:focus{
+    outline:none;
+    border-bottom:2px solid rgba(0, 0, 0, 0.1);
+}
+form textarea:focus{
+    outline:none;
+    border-bottom:2px solid rgba(0, 0, 0, 0.1);
+}
+div.social{
+    margin-top: 20px;
+}
+button.social_button{
+    background: #212121;
+    color: #e8e8e8;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: .182s;
+}
+button.social_button:hover{
+    opacity: 90%;
+}
+.gap_3{
+    margin-top: 40px;
+}
+.centered_text{
+    text-align: center;
+    font-size: 17px;
+}
+.centered_text a{
+    text-decoration: none;
+}
