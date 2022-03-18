@@ -2,6 +2,18 @@
 html {
     scroll-behavior: smooth;
 }
+header{
+    margin: 0;
+    width: 100%;
+    z-index: 99999999999999;
+    position: fixed ;
+    display: block;
+}
+header nav{
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 20px );
+}
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -11,9 +23,15 @@ body {
 nav{
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     padding: 15px 10px;
-    background: #f8f9fa;
+    /*background: #f8f9fa;*/
+    background: transparent;
     border: none;
     border-radius: 0;
+    margin: 0px;
+    width: 100%;
+    z-index: 99999999999999;
+    position: fixed;
+    text-align: center;
     margin-bottom: 40px;
     font-size: 1.2em;
 }
@@ -66,6 +84,17 @@ button.left_button_2{
 button.left_button_2:hover{
     background: transparent;
     color: #212121;
+}
+button.left_button_3{
+    border: 1px solid #212121;
+    border-radius: 100px;
+    padding: 14px;
+    background: #212121;
+    color: #e8e8e8;
+    transition: .182s;
+}
+button.left_button_3:hover{
+    opacity: 70%;
 }
 div.gap_1{
     margin-top: 15em;
@@ -139,7 +168,8 @@ div.gap_2{
     width:10px;
     transition: .182s;
     height:5px;
-    background: #555; 
+    background: #212121; 
+    border-radius: 7px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
@@ -177,11 +207,11 @@ form textarea{
 }
 form input:focus{
     outline:none;
-    border-bottom:2px solid rgba(0, 0, 0, 0.1);
+    border-bottom:2px solid rgba(0, 0, 0, 0.2);
 }
 form textarea:focus{
     outline:none;
-    border-bottom:2px solid rgba(0, 0, 0, 0.1);
+    border-bottom:2px solid rgba(0, 0, 0, 0.2);
 }
 div.social{
     margin-top: 20px;
@@ -207,4 +237,17 @@ button.social_button:hover{
 }
 .centered_text a{
     text-decoration: none;
+}
+.noselect{
+    user-select: none;
+}
+button{
+    user-select: none;
+}
+div.centered_content h2 span.noselect.hidden{
+    color: transparent;
+    user-select: none;
+}
+.arrow_right_button:hover:before{
+    content: "👉";
 }
