@@ -11,7 +11,7 @@ header{
 }
 header nav{
     background: rgba( 255, 255, 255, 0.25 );
-    backdrop-filter: blur( 1px );
+    backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
 }
 body {
@@ -56,7 +56,8 @@ div.centered_content{
     text-align: center;
 }
 h4.hi_im{
-    width: 70%;
+    width: 100%;
+    text-align: center;
     margin-top: 95px;
     font-size: 60px;
     margin-bottom: 20px;
@@ -97,7 +98,7 @@ button.left_button_3:hover{
     opacity: 70%;
 }
 div.gap_1{
-    margin-top: 15em;
+    margin-top: 10em;
 }
 button.submit_btn{
     width: 100px;
@@ -168,14 +169,13 @@ div.gap_2{
     width:10px;
     transition: .182s;
     height:5px;
-    background: #212121; 
-    border-radius: 7px;
+    background: #212121;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #000; 
+    background: #212121;
 }
 div.skills,div.gap_1,div.gap_2,nav{
     user-select: none;
@@ -248,6 +248,15 @@ div.centered_content h2 span.noselect.hidden{
     color: transparent;
     user-select: none;
 }
-.arrow_right_button:hover:before{
+.arrow_right_button:hover::before{
     content: "👉";
+}
+div.buttons{
+  text-align: center;
+}
+.center{
+  text-align: center;
+}
+h5.center{
+  margin:17px;
 }

@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -18,21 +17,26 @@
 			<a href="#skills"><li>Skills</li></a>
 			<a href="#contact"><li>Contact</li></a>
 		</nav>
-	</header>	
+	</header>
 	<div class="container">
 		<div class="centered_content">
 			<h2><span class="noselect hidden">.</span></h2>
 		</div>
-		<h4 class="hi_im">Hi 👋, I'm Aasheesh Agarwal!</h4>		
-		<button class="left_button noselect">Button 1</button>
-		<button class="left_button_2 noselect">Button 2</button>
+		<h4 class="hi_im">Hi 👋, I'm <span id="name"></span>!</h4>
+		<h5 class="center" id="skills"></h5>
+		<div class="buttons">
+		<a href="#about"><button class="left_button noselect">About me</button></a>
+		<a href="#contact"><button class="left_button_2 noselect">Contact me</button></a>
+		</div>
 		<!-- The below commented code is for other contributors if contribute, this is the third style of buttons as arrow button. -->
-		<!-- <br>
+		<!--
 		<br>
-		<button class="left_button_3 noselect arrow_right_button"> Button 3</button> -->
+		<br>
+		<button class="left_button_3 noselect arrow_right_button"> Button 3</button>
+		-->
 		<div class="gap_1 noselect"></div>
 		<h2 id="about" class="noselect">About me</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate. Sed tortor enim, rhoncus vel mauris vitae, elementum condimentum augue. Donec fermentum lobortis lectus, in feugiat turpis faucibus et. Pellentesque luctus metus vitae augue lobortis sagittis vitae sit amet enim. Morbi egestas velit ac arcu fermentum lacinia. Nullam eget hendrerit neque. Cras et laoreet ante. Vivamus condimentum euismod commodo. Nulla pulvinar, turpis vitae condimentum tempor, ex ex eleifend quam, et maximus sapien mi sed est. Donec elit mi, dictum nec magna quis, mollis sollicitudin ligula. Maecenas ullamcorper ante vel ullamcorper mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+		<p id="aboutme"></p>
 		<div class="gap_2 noselect"></div>
 		<h2 id="skills" class="noselect">Skills</h2>
 		<div class="skills noselect">
@@ -40,32 +44,32 @@
       <div class="skill-title">
          Programming
       </div>
-      <div class="skill-bar" data-bar="84"><span></span></div>
+      <div class="skill-bar" id="skill1"><span></span></div>
    </div>
    <div class="skill">
-      
+
       <div class="skill-title">
          Graphic Designing
       </div>
-      
-      <div class="skill-bar" data-bar="70"><span></span></div>
+
+      <div class="skill-bar" id="skill2"><span></span></div>
    </div>
    <div class="skill">
-      
+
       <div class="skill-title">
          Command-line
       </div>
-      
-      <div class="skill-bar" data-bar="92"><span></span></div>
+
+      <div class="skill-bar" id="skill3"><span></span></div>
    </div>
-   
+
 </div>
 <div class="gap_1 noselect"></div>
 <h2 id="contact" class="noselect">Contact</h2>
-<form class="noselect">
-	<input type="text" placeholder="Name" required>
-	<input type="email" placeholder="Email" required>
-	<textarea placeholder="Your Message" rows="5" required></textarea>
+<form class="noselect" method="post" id="form">
+	<input type="text" placeholder="Name" required name="name">
+	<input type="email" placeholder="Email" required name="email">
+	<textarea placeholder="Your Message" rows="5" required name="message"></textarea>
 	<button type="submit" class="left_button submit_btn">Send</button>
 </form>
 
@@ -83,6 +87,7 @@
 
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
 
 </body>
 </html>
